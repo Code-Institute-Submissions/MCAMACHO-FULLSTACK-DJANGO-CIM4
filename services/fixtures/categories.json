@@ -59,12 +59,28 @@
         "pk": 8,
         "model": "services.category",
         "fields": {
+            "name": "interior",
+            "friendly_name": "Interior"
+        }
+    },
+    {
+        "pk": 9,
+        "model": "services.category",
+        "fields": {
+            "name": "exterior",
+            "friendly_name": "Exterior"
+        }
+    },
+    {
+        "pk": 10,
+        "model": "services.category",
+        "fields": {
             "name": "new_arrivals",
             "friendly_name": "New Arrivals"
         }
     },
     {
-        "pk": 9,
+        "pk": 11,
         "model": "services.category",
         "fields": {
             "name": "home_office",

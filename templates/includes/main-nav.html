@@ -8,7 +8,7 @@
                 <a href="" class="dropdown-item">By Price</a>
                 <a href="" class="dropdown-item ">By Rating</a>
                 <a href="" class="dropdown-item ">By Category</a>
-                <a href="" class="dropdown-item">All Services</a>
+                <a href="{% url 'services' %}" class="dropdown-item">All Services</a>
             </div>
         </li>
 
@@ -17,10 +17,10 @@
                 Media Services
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="media-link">
-                <a href="" class="dropdown-item">Home Automation</a>
-                <a href="" class="dropdown-item">Smart Home</a>
-                <a href="" class="dropdown-item">Computer Repair</a>
-                <a href="" class="dropdown-item">All Media Services</a>
+                <a href="{% url 'services' %}?category=smart_home,media_services,home_services" class="dropdown-item">Home Automation</a>
+                <a href="{% url 'services' %}?category=smart_home" class="dropdown-item">Smart Home</a>
+                <a href="{% url 'services' %}?category=computer_repairs" class="dropdown-item">Computer Repair</a>
+                <a href="{% url 'services' %}?category=smart_home,media_services,computer_repairs,tech_support" class="dropdown-item">All Media Services</a>
             </div>
         </li>
 
@@ -29,10 +29,10 @@
                 Home Services
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="home-link">
-                <a href="" class="dropdown-item">Remodeling</a>
-                <a href="" class="dropdown-item">Interior</a>
-                <a href="" class="dropdown-item">Exterior</a>
-                <a href="" class="dropdown-item">All Home Services</a>
+                <a href="{% url 'services' %}?category=remodeling" class="dropdown-item">Remodeling</a>
+                <a href="{% url 'services' %}?category=interior" class="dropdown-item">Interior</a>
+                <a href="{% url 'services' %}?category=exterior" class="dropdown-item">Exterior</a>
+                <a href="{% url 'services' %}?category=home_services,exterior,interior,remodeling" class="dropdown-item">All Home Services</a>
             </div>
         </li>
 
@@ -41,10 +41,10 @@
                 Home &amp; Media
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="home-media-link">
-                <a href="" class="dropdown-item">Tech-Support</a>
-                <a href="" class="dropdown-item">Home Office</a>
-                <a href="" class="dropdown-item">Home Media Center</a>
-                <a href="" class="dropdown-item">All Home &amp; Media Services </a>
+                <a href="{% url 'services' %}?category=tech_support"  class="dropdown-item">Tech-Support</a>
+                <a href="{% url 'services' %}?category=tech_support,home_office"  class="dropdown-item">Home Office</a>
+                <a href="{% url 'services' %}?category=media_services,tech_support"  class="dropdown-item">Home Media Center</a>
+                <a href="{% url 'services' %}?category=media_services,tech_support,home_office,computer_repairs" class="dropdown-item">All Home &amp; Media Services </a>
             </div>
         </li>
 
@@ -53,9 +53,9 @@
                 Special Offers
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="specials-link">
-                <a href="" class="dropdown-item">New Arrivals</a>
-                <a href="" class="dropdown-item">Deals</a>
-                <a href="" class="dropdown-item">All Specials</a>
+                <a href="{% url 'services' %}?category=new_arrival" class="dropdown-item">New Arrivals</a>
+                <a href="{% url 'services' %}?category=deals" class="dropdown-item">Deals</a>
+                <a href="{% url 'services' %}?category=new_arrival,deals" class="dropdown-item">All Specials</a>
             </div>
         </li>
     </ul>
