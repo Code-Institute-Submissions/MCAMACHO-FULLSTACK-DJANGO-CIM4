@@ -1,0 +1,32 @@
+[
+    {
+        "pk": 1,
+        "model": "services.service",
+        "fields": {
+            "sku": "tt42424242",
+            "name": "test",
+            "description": "test only",
+            "price": 42.24,
+            "category": 1,
+            "rating": 4.6,
+            "image_url": "https://raw.githubusercontent.com/MACmidiDEV/MCAMACHO-FULLSTACK-DJANGO-CIM4/master/media/homepage.png",
+            "image": "test.png"
+        }
+    },
+    {
+        "pk": 2,
+        "model": "services.service",
+        "fields": {
+            "sku": "tt2424242424",
+            "name": "testing",
+            "description": "Straight-test",
+            "price": 158.99,
+            "category": 4,
+            "rating": 4.6,
+            "image_url": "https://raw.githubusercontent.com/MACmidiDEV/MCAMACHO-FULLSTACK-DJANGO-CIM4/master/media/homepage.png",
+            "image": "testing.png"
+        }
+    }
+   
+   
+]

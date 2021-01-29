@@ -1,0 +1,74 @@
+[
+    {
+        "pk": 1,
+        "model": "services.category",
+        "fields": {
+            "name": "media_services",
+            "friendly_name": "Media Services"
+        }
+    },
+    {
+        "pk": 2,
+        "model": "services.category",
+        "fields": {
+            "name": "home_services",
+            "friendly_name": "Home Services"
+        }
+    },
+    {
+        "pk": 3,
+        "model": "services.category",
+        "fields": {
+            "name": "tech_support",
+            "friendly_name": "Tech Support"
+        }
+    },
+    {
+        "pk": 4,
+        "model": "services.category",
+        "fields": {
+            "name": "deals",
+            "friendly_name": "Deals"
+        }
+    },
+    {
+        "pk": 5,
+        "model": "services.category",
+        "fields": {
+            "name": "remodeling",
+            "friendly_name": "Remodeling"
+        }
+    },
+    {
+        "pk": 6,
+        "model": "services.category",
+        "fields": {
+            "name": "computer_repairs",
+            "friendly_name": "Computer Repairs"
+        }
+    },
+    {
+        "pk": 7,
+        "model": "services.category",
+        "fields": {
+            "name": "smart_home",
+            "friendly_name": "Smart Home"
+        }
+    },
+    {
+        "pk": 8,
+        "model": "services.category",
+        "fields": {
+            "name": "new_arrivals",
+            "friendly_name": "New Arrivals"
+        }
+    },
+    {
+        "pk": 9,
+        "model": "services.category",
+        "fields": {
+            "name": "home_office",
+            "friendly_name": "Home Office"
+        }
+    }
+]
