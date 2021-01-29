@@ -9,7 +9,7 @@
             "price": 42.24,
             "category": 1,
             "rating": 4.6,
-            "image_url": "https://raw.githubusercontent.com/MACmidiDEV/MCAMACHO-FULLSTACK-DJANGO-CIM4/master/media/homepage.png",
+            "image_url": "https://raw.githubusercontent.com/MACmidiDEV/MCAMACHO-FULLSTACK-DJANGO-CIM4/master/media/test.png",
             "image": "test.png"
         }
     },
@@ -23,7 +23,7 @@
             "price": 158.99,
             "category": 4,
             "rating": 4.6,
-            "image_url": "https://raw.githubusercontent.com/MACmidiDEV/MCAMACHO-FULLSTACK-DJANGO-CIM4/master/media/homepage.png",
+            "image_url": "https://raw.githubusercontent.com/MACmidiDEV/MCAMACHO-FULLSTACK-DJANGO-CIM4/master/media/testing.png",
             "image": "testing.png"
         }
     }
