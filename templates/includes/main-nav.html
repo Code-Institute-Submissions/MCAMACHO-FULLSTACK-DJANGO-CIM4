@@ -5,9 +5,9 @@
                 All Services
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="all-services-link">
-                <a href="" class="dropdown-item">By Price</a>
-                <a href="" class="dropdown-item ">By Rating</a>
-                <a href="" class="dropdown-item ">By Category</a>
+                <a href="{% url 'services' %}?sort=price&direction=asc" class="dropdown-item">By Price</a>
+                <a href="{% url 'services' %}?sort=rating&direction=desc" class="dropdown-item ">By Rating</a>
+                <a href="{% url 'services' %}?sort=category&direction=asc" class="dropdown-item ">By Category</a>
                 <a href="{% url 'services' %}" class="dropdown-item">All Services</a>
             </div>
         </li>
