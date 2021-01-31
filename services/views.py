@@ -21,7 +21,7 @@ def all_services(request):
             sort = sortkey
             if sortkey == 'name':
                 sortkey = 'lower_name'
-                products = services.annotate(lower_name=Lower('name'))
+                services = services.annotate(lower_name=Lower('name'))
             if sortkey == 'category':
                 sortkey = 'category__name'
             if 'direction' in request.GET:
@@ -42,7 +42,7 @@ def all_services(request):
                 return redirect(reverse('services'))
             
             queries = Q(name__icontains=query) | Q(description__icontains=query)
-            products = services.filter(queries)
+            services = services.filter(queries)
 
     current_sorting = f'{sort}_{direction}'
 
@@ -56,7 +56,7 @@ def all_services(request):
     return render(request, 'services/services.html', context)
 
 
-def service_detail(request, product_id):
+def service_detail(request, service_id):
     """ A view to show individual service details """
 
     service = get_object_or_404(Service, pk=service_id)
