@@ -6,6 +6,7 @@ from django.db.models.functions import Lower
 
 # Create your views here.
 
+
 def all_services(request):
     """ A view to show all services, including sorting and search queries """
 
@@ -55,7 +56,6 @@ def all_services(request):
 
     return render(request, 'services/services.html', context)
 
-
 def service_detail(request, service_id):
     """ A view to show individual service details """
 
@@ -66,3 +66,13 @@ def service_detail(request, service_id):
     }
 
     return render(request, 'services/service_detail.html', context)
+
+def add_service(request):
+    """ Add a service to the store """
+    form = ServiceForm()
+    template = 'services/add_service.html'
+    context = {
+        'form': form,
+    }
+
+    return render(request, template, context)    
