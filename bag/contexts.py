@@ -11,15 +11,27 @@ def bag_contents(request):
     service_count = 0
     bag = request.session.get('bag', {})
 
-    for item_id, quantity in bag.items():
-        service = get_object_or_404(Service, pk=item_id)
-        total += quantity * service.price
-        service_count += quantity
-        bag_items.append({
-            'item_id': item_id,
-            'quantity': quantity,
-            'service': service,
-        })
+    for item_id, item_data in bag.items():
+        if isinstance(item_data, int):
+            service = get_object_or_404(Service, pk=item_id)
+            total += item_data * service.price
+            service_count += item_data
+            bag_items.append({
+                'item_id': item_id,
+                'quantity': item_data,
+                'service': service,
+            })
+        else:
+            service = get_object_or_404(Service, pk=item_id)
+            for size, quantity in item_data['items_by_size'].items():
+                total += quantity * service.price
+                service_count += quantity
+                bag_items.append({
+                    'item_id': item_id,
+                    'quantity': quantity,
+                    'service': service,
+                    'size': size,
+                })
 
     if total < settings.FREE_DELIVERY_THRESHOLD:
         delivery = total * Decimal(settings.STANDARD_DELIVERY_PERCENTAGE / 100)
