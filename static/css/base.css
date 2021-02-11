@@ -209,6 +209,11 @@ input[name='q']::placeholder {
     padding: .25rem .5rem !important;
 }
 
+.img-rnd {
+    border-radius: 50%;
+    opacity: .4;
+}
+
 /* -------------------------------- Media Queries */
 
 /* Slightly larger container on xl screens */
