@@ -16,7 +16,7 @@
     <!-- Heading Row -->
     <div class="row align-items-center my-5">
       <div class="col-lg-7">
-        <img class="img-fluid rounded mb-4 mb-lg-0 img-rnd" src="https://macmididev-ecomm-ci-fsd.s3.amazonaws.com/media/homepage.png" alt="homepage image - company logo">
+        <img class="img-fluid rounded mb-4 mb-lg-0 img-rnd" src="{{ STATIC_URL }}images/home/homepage.png" alt="homepage image - company logo">
       </div>
       <!-- /.col-lg-8 -->
       <div class="col-lg-5 text-center home-callout">
@@ -83,11 +83,8 @@
   </div>
   <!-- /.container -->
 
-  <!-- Footer -->
-  <footer class="py-5 bg-dark">
-    <div class="container">
-      <p class="m-0 text-center text-white">Cam Home &amp; Media &copy; | 2020</p>
-    </div>
-    <!-- /.container -->
-  </footer>
+  <!-- FOOTER -->
+  {% include 'includes/footer.html' %}
+  <!-- /FOOTER -->
+
 {% endblock %}
