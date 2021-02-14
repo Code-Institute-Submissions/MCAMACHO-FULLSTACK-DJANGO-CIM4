@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}Error 500{% endblock %}
+
+{% block content %}
+    <div class="header-container">
+    </div>
+
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col">
+                <h1 class="text-center">Error 500</h1>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h2>Internal error.</h2>
+                <div class="mt-4">
+                    <a class="d-inline-block" href="{% url 'home' %}">Back to homepage</a>
+                    <a class="mr-2 mb-2 d-inline-block" href="{% url 'services' %}">View Services</a>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
