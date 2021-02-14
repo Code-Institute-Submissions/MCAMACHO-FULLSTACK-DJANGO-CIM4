@@ -124,7 +124,7 @@ def edit_service(request, service_id):
         'service': service,
     }
 
-    return redirect(reverse('services'))
+    return render(request, template, context)
 
 
 @login_required
