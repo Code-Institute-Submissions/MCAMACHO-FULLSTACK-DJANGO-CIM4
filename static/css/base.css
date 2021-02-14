@@ -215,6 +215,12 @@ input[name='q']::placeholder {
 }
 
 
+/* -------------------------------- About Page */
+#about-img-header {
+    background: url('../images/about/img-about-img.png') no-repeat center;
+}
+
+
 /* -------------------------------- Media Queries */
 
 /* Slightly larger container on xl screens */

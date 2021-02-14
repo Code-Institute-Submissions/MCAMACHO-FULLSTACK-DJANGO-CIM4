@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}About Us{% endblock %}
+
+{% block header_content %}
+    <div id="about-img-header">
+    </div>
+{% endblock %}
+
+{% block content %}
+    {% include 'about/includes/section_about_s1_info.html' %}
+    {% include 'about/includes/section_about_s2_mission.html' %}
+{% endblock %}
