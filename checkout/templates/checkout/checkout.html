@@ -43,7 +43,7 @@
                                 {% if item.service.image %}
                                     <img class="w-100" src="{{ item.service.image.url }}" alt="{{ service.name }}">
                                 {% else %}
-                                    <img class='w-100'src="https://macmididev-ecomm-ci-fsd.s3.amazonaws.com/media/no_image.png" alt="{{ service.name }}">
+                                    <img class='w-100'src="{{ MEDIA_URL }}no_image.png" alt="{{ service.name }}">
                                 {% endif %}
                             </a>
                         </div>
