@@ -31,10 +31,12 @@
         {% endif %}
       </ul>
     </div>
-    {% block content %}
     {% endblock %}
+    
+
+    {% block postloadjs %}
+        <script src="{% static 'js/toasts.js' %}"></script>
     {% endblock %}
-    {% block extra_body %}
-    {% endblock %}
+
   </body>
 </html>
