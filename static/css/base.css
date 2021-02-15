@@ -213,10 +213,13 @@ input[name='q']::placeholder {
     padding: .25rem .5rem !important;
 }
 
+.top-space {
+    height: 5vh;
+}
 
 /* -------------------------------- About Page */
 #about-img-header {
-    background: url('../images/about/img-about-img.png') no-repeat center;
+    background: url('https://macmididev-ecomm-ci-fsd.s3.amazonaws.com/media/homepage.jpeg') no-repeat center;
 }
 
 
