@@ -116,6 +116,11 @@ input[name='q']::placeholder {
     background-color: #aab7c4a3;
 }
 
+#foot-about {
+    text-align: center !important;
+    color: #fff!important;
+}
+
 /* ------------------------------- bootstrap toasts */
 
 .message-container {
